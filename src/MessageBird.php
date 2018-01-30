@@ -24,7 +24,7 @@ class MessageBird
         $MessageBird = new \MessageBird\Client(env('MESSAGE_BIRD_API_KEY', 'please_set_api_key'));
 
         $Message = new \MessageBird\Objects\Message();
-        $Message->originator = env('MESSAGE_BIRD_FROM_NAME', config('name'));
+        $Message->originator = env('MESSAGE_BIRD_FROM_NAME', config('app.name'));
         $Message->recipients = $phoneNumber;
         $Message->body = $message;
         
