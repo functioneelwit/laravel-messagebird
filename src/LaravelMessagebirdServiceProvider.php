@@ -1,6 +1,6 @@
 <?php
 
-namespace functioneelwit\LaravelMessagebird;
+namespace FunctioneelWit\LaravelMessageBird;
 
 use Illuminate\Support\ServiceProvider;
 

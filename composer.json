@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "functioneelwit\\laravel-messagebird\\": "src"
+            "FunctioneelWit\\LaravelMessageBird\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "functioneelwit\\laravel-messagebird\\": "tests"
+            "FunctioneelWit\\LaravelMessageBird\\": "tests"
         }
     },
     "scripts": {
@@ -46,10 +46,10 @@
         },
         "laravel": {
             "providers": [
-                "functioneelwit\\laravel-messagebird\\LaravelMessageBirdServiceProvider"
+                "FunctioneelWit\\LaravelMessageBird\\LaravelMessageBirdServiceProvider"
             ],
              "aliases": {
-                "MessageBird": "functioneelwit\\laravel-messagebird\\Facade"
+                "MessageBird": "FunctioneelWit\\LaravelMessageBird\\Facade"
             }
         }
     },

@@ -1,6 +1,6 @@
 <?php
 
-namespace functioneelwit\LaravelMessagebird;
+namespace FunctioneelWit\LaravelMessageBird;
 
 class MessageBird
 {
