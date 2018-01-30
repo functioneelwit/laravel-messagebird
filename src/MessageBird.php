@@ -48,8 +48,10 @@ class MessageBird
      *
      * @return string Returns the phrase passed in
      */
-    public function test()
+    public function getBalance()
     {
-        return 'whoop!';
+        $MessageBird = new \MessageBird\Client($this->apiKey);
+
+        return $MessageBird->balance->read();
     }
 }
