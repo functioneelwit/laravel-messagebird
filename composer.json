@@ -1,12 +1,12 @@
 {
-    "name": "functioneelwit/LaravelMessagebird",
+    "name": "functioneelwit/LaravelMessageBird",
     "type": "library",
     "description": "Simple Laravel bridge for sending single message with MessageBird",
     "keywords": [
         "functioneelwit",
         "LaravelMessagebird"
     ],
-    "homepage": "https://github.com/functioneelwit/LaravelMessagebird",
+    "homepage": "https://github.com/functioneelwit/LaravelMessageBird",
     "license": "MIT",
     "authors": [
         {
