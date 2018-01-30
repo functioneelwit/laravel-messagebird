@@ -12,9 +12,9 @@ class MessageBird
      */
     public function __construct()
     {
-        if(! $this->apiKey)
+        if(! env('MESSAGE_BIRD_API_KEY'))
         {
-            abort(501, 'Please add Messagebird API key to environment file (MESSAGE_BIRD_API_KEY).');
+            abort(501, 'Please set MESSAGE_BIRD_API_KEY in your .env file.');
         }
 
         // constructor body
