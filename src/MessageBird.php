@@ -1,8 +1,8 @@
 <?php
 
-namespace FunctioneelWit\LaravelMessageBird;
+namespace FunctioneelWit\LaravelMessagebird;
 
-class MessageBird
+class Messagebird
 {
     protected $apiKey;
     protected $fromName;
@@ -31,14 +31,14 @@ class MessageBird
      */
     public function sendSMS($phoneNumber, $message)
     {
-        $MessageBird = new \MessageBird\Client($this->apiKey);
+        $Messagebird = new \Messagebird\Client($this->apiKey);
 
-        $Message = new \MessageBird\Objects\Message();
+        $Message = new \Messagebird\Objects\Message();
         $Message->originator = $this->fromName;
         $Message->recipients = $phoneNumber;
         $Message->body = $message;
         
-        $MessageBird->messages->create($Message);
+        $Messagebird->messages->create($Message);
     }
 
     /**
@@ -50,8 +50,8 @@ class MessageBird
      */
     public function getBalance()
     {
-        $MessageBird = new \MessageBird\Client($this->apiKey);
+        $Messagebird = new \Messagebird\Client($this->apiKey);
 
-        return $MessageBird->balance->read();
+        return $Messagebird->balance->read();
     }
 }

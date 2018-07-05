@@ -1,7 +1,7 @@
 {
     "name": "functioneelwit/laravel-messagebird",
     "type": "library",
-    "description": "Simple Laravel bridge for sending single message though MessageBird",
+    "description": "Simple Laravel bridge for sending single message though Messagebird",
     "keywords": [
         "functioneelwit",
         "laravel-messagebird"
@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "FunctioneelWit\\LaravelMessageBird\\": "src"
+            "FunctioneelWit\\LaravelMessagebird\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "FunctioneelWit\\LaravelMessageBird\\": "tests"
+            "FunctioneelWit\\LaravelMessagebird\\": "tests"
         }
     },
     "scripts": {
@@ -46,10 +46,10 @@
         },
         "laravel": {
             "providers": [
-                "FunctioneelWit\\LaravelMessageBird\\LaravelMessageBirdServiceProvider"
+                "FunctioneelWit\\LaravelMessagebird\\LaravelMessagebirdServiceProvider"
             ],
              "aliases": {
-                "MessageBird": "FunctioneelWit\\LaravelMessageBird\\Facade"
+                "Messagebird": "FunctioneelWit\\LaravelMessagebird\\Facade"
             }
         }
     },

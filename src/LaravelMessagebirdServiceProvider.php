@@ -4,7 +4,7 @@ namespace FunctioneelWit\LaravelMessageBird;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelMessagebirdServiceProvider extends ServiceProvider
+class LaravelMessageBirdServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.

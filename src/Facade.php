@@ -1,6 +1,6 @@
 <?php
 
-namespace FunctioneelWit\LaravelMessageBird;
+namespace FunctioneelWit\LaravelMessagebird;
 
 use Illuminate\Support\Facades\Facade as BaseFacade;
 
