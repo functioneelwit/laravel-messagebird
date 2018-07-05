@@ -12,14 +12,14 @@ class Messagebird
      */
     public function __construct()
     {
-        if(! env('MESSAGE_BIRD_API_KEY'))
+        if(! env('MESSAGEBIRD_API_KEY'))
         {
-            abort(501, 'Please set MESSAGE_BIRD_API_KEY in your .env file.');
+            abort(501, 'Please set MESSAGEBIRD_API_KEY in your .env file.');
         }
 
         // constructor body
-        $this->apiKey = env('MESSAGE_BIRD_API_KEY');
-        $this->fromName = env('MESSAGE_BIRD_FROM_NAME', config('app.name'));
+        $this->apiKey = env('MESSAGEBIRD_API_KEY');
+        $this->fromName = env('MESSAGEBIRD_FROM_NAME', config('app.name'));
     }
 
     /**
